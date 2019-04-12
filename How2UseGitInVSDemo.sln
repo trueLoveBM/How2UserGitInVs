@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "How2UseGitInVSDemo", "How2UseGitInVSDemo\How2UseGitInVSDemo.csproj", "{38ECE19C-793C-4709-B2A4-ED0E4D979CE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityDemo", "EntityDemo\EntityDemo.csproj", "{86DD3675-1183-49EA-A605-E3D091B254DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridMergeDemo", "DataGridMergeDemo\DataGridMergeDemo.csproj", "{40DDC32B-B011-4D43-A218-0E9F444FCBA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{38ECE19C-793C-4709-B2A4-ED0E4D979CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38ECE19C-793C-4709-B2A4-ED0E4D979CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38ECE19C-793C-4709-B2A4-ED0E4D979CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86DD3675-1183-49EA-A605-E3D091B254DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86DD3675-1183-49EA-A605-E3D091B254DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86DD3675-1183-49EA-A605-E3D091B254DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86DD3675-1183-49EA-A605-E3D091B254DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40DDC32B-B011-4D43-A218-0E9F444FCBA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40DDC32B-B011-4D43-A218-0E9F444FCBA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40DDC32B-B011-4D43-A218-0E9F444FCBA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40DDC32B-B011-4D43-A218-0E9F444FCBA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

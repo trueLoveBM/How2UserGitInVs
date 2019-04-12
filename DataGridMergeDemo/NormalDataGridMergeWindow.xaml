@@ -1,0 +1,44 @@
+﻿<Window x:Class="DataGridMergeDemo.NormalDataGridMergeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataGridMergeDemo"
+        mc:Ignorable="d"
+        Title="演示DataGrid合并单元格" Height="450" Width="800">
+    <Grid>
+
+        <!--将页面分为一行，第一行高60px，放置功能按钮，第二行占满全部，防止DataGrid-->
+        <Grid.RowDefinitions >
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <!--第二行，放置dataGrid-->
+        <DataGrid Name="dg_student" Grid.Row="1" ItemsSource="{Binding StudentList}" AutoGenerateColumns="False"  CanUserAddRows="False" IsReadOnly="True">
+
+            <!--开始准备放置列-->
+            <DataGrid.Columns>
+                <DataGridTextColumn  Width="1*" Header="学号" Binding="{Binding Id}"></DataGridTextColumn>
+                <DataGridTextColumn  Width="1*" Header="姓名" Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTextColumn  Width="1*" Header="年龄" Binding="{Binding Age}"></DataGridTextColumn>
+                <DataGridTextColumn  Width="1*" Header="住址" Binding="{Binding Address}"></DataGridTextColumn>
+
+                <DataGridTemplateColumn  Width="8*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DataGrid ItemsSource="{Binding Scores}" CanUserAddRows="False" AutoGenerateColumns="False" HeadersVisibility="None" IsReadOnly="True">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn  Width="1*" Header="课程名称" Binding="{Binding CourseName}"></DataGridTextColumn>
+                                    <DataGridTextColumn  Width="1*" Header="成绩" Binding="{Binding Score}"></DataGridTextColumn>
+                                    <DataGridTextColumn  Width="1*" Header="排名" Binding="{Binding sort}"></DataGridTextColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+
+        </DataGrid>
+    </Grid>
+</Window>
